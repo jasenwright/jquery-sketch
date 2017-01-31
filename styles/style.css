@@ -1,0 +1,18 @@
+#main {	
+	height: 832px;
+	width: 832px;
+	margin: auto;
+	line-height: 0;
+	border: 1px solid black;
+}
+.unit {
+	height: 6.25%;
+	width: 6.25%;
+	box-sizing: border-box;
+	display: inline-block;
+	border: 1px solid black;
+}
+
+.hov { 
+	background-color: #000000 !important;
+}
