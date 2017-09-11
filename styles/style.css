@@ -1,30 +1,37 @@
 h1 {
+	color: #FFDD00;
 	text-align: center;
 	font-family: Arial, Helvetica, sans-serif;
 }
-
-.outer {
-	width:832px;
-	margin: auto;
+body {
+	background-color: #FF1111;
+	font-family: Arial, Helvetica, sans-serif;
 }
-
-#main {	
-	height: 832px;
-	width: 832px;
-	margin: auto;
-	line-height: 0;
-	border: 1px solid black;
+form {
+   display: inline-block;
+   text-align: center;
+   position: relative;
 }
-.unit {
-	box-sizing: border-box;
-	display: inline-block;
-	border: 1px solid black;
-}
-
-.hov { 
+.hov {
 	background-color: #000000 !important;
 }
 
 .res {
 	background-color: #FFFFFF !important;
+}
+.settings {
+	margin: auto;
+	text-align: center;
+}
+.container {
+	background-color: white;
+	line-height: 0;
+	text-align: center;
+	margin: auto;
+	width: 500px;
+	height: 500px;
+}
+.unit {
+	float: left;
+	opacity: 0;
 }

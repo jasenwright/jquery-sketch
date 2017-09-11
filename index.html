@@ -4,18 +4,24 @@
 		<meta charset="utf-8">
 		<title>jQuery-a-sketch</title>
 		<link rel="stylesheet" href="styles/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	</head>
 	<body>
 		<h1>jQuery-a-sketch</h1>
-		<div class="outer">
 			<div class="settings">
-				<button id="clear" type="button">Clear</button>
+				<form>
+            Pen
+            <input type="radio" name="pentype" id="pen" checked>
+            Rainbow
+            <input type="radio" name="pentype" id="rainbow">
+            Gradient
+            <input type="radio" name="pentype" id="gradient">
+				</form>
 				<button id="resize" type="button">Resize Grid</button>
+				<button id="clear" type="button">Clear</button>
 			</div>
 			<br/>
-			<div id="main"></div>
-		</div>
-		<script src="scripts/jquery.js"></script>
+			<div class="container"></div>
 		<script src="scripts/sketch.js"></script>
 	</body>
 </html>
