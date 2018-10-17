@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	clearCanvas();
-	createGrid(16);
+	createGrid(32);
 	$('.container').on('mouseenter', '.unit', function() {
 		if ($('#pen').is(':checked')) {
 			$(this).css({'background-color': 'black', 'opacity': '1'});
@@ -33,8 +33,12 @@ function clearCanvas() {
 
 function sizeCanvas() {
 	$("#resize").click(function() {
-		var user = prompt("Select a new size for grid");
+		var user = prompt("Select a new size for grid (1-128)");
 		var newSize = parseInt(user);
+		while (newSize < 1 || newSize > 128) {
+			user = prompt("Select a new size for grid (1-128)");
+			newSize = parseInt(user);
+		}
 		createGrid(newSize);
 	});
 }
